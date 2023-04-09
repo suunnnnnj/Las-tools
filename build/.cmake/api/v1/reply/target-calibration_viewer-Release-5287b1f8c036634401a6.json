@@ -1,0 +1,1340 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "calibration_viewer"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"link_directories",
+			"target_link_libraries",
+			"add_compile_options",
+			"set_property",
+			"include",
+			"find_external_library",
+			"find_package",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt",
+			"/usr/lib/cmake/vtk-7.1/UseVTK.cmake",
+			"/usr/local/share/pcl-1.13/PCLConfig.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 26,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 20,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 27,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 3,
+				"parent" : 0
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 7,
+				"parent" : 0
+			},
+			{
+				"file" : 2,
+				"parent" : 5
+			},
+			{
+				"command" : 6,
+				"file" : 2,
+				"line" : 546,
+				"parent" : 6
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 345,
+				"parent" : 7
+			},
+			{
+				"file" : 1,
+				"parent" : 8
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 23,
+				"parent" : 9
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 19,
+				"parent" : 0
+			},
+			{
+				"command" : 8,
+				"file" : 1,
+				"line" : 26,
+				"parent" : 9
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -fopenmp -O3 -DNDEBUG  "
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-std=c++14"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-msse4.2"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-mfpmath=sse"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-march=native"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-mavx2"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-fPIC"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 3,
+					"define" : "BOOST_ALL_NO_LIB"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "BOOST_ATOMIC_DYN_LINK"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "BOOST_DATE_TIME_DYN_LINK"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "BOOST_FILESYSTEM_DYN_LINK"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "BOOST_IOSTREAMS_DYN_LINK"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "BOOST_PROGRAM_OPTIONS_DYN_LINK"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "BOOST_SERIALIZATION_DYN_LINK"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "BOOST_SYSTEM_DYN_LINK"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "BOOST_THREAD_DYN_LINK"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "QT_CORE_LIB"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "QT_GUI_LIB"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "QT_NO_DEBUG"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "QT_WIDGETS_LIB"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "qh_QHpointer"
+				},
+				{
+					"backtrace" : 10,
+					"define" : "vtkRenderingContext2D_AUTOINIT=1(vtkRenderingContextOpenGL2)"
+				},
+				{
+					"backtrace" : 10,
+					"define" : "vtkRenderingCore_AUTOINIT=3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL2)"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 11,
+					"path" : "/home/sunj/Desktop/code/Ubuntu-2004/auto-calib/Camrea-LiDAR/Final_Version/LC_calibration_line_optimization/include"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/sunj/Desktop/code/Ubuntu-2004/auto-calib/Camrea-LiDAR/Final_Version/LC_calibration_line_optimization/opencv_calib3d"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/sunj/Desktop/code/Ubuntu-2004/auto-calib/Camrea-LiDAR/Final_Version/LC_calibration_line_optimization/opencv_core"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/sunj/Desktop/code/Ubuntu-2004/auto-calib/Camrea-LiDAR/Final_Version/LC_calibration_line_optimization/opencv_dnn"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/sunj/Desktop/code/Ubuntu-2004/auto-calib/Camrea-LiDAR/Final_Version/LC_calibration_line_optimization/opencv_features2d"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/sunj/Desktop/code/Ubuntu-2004/auto-calib/Camrea-LiDAR/Final_Version/LC_calibration_line_optimization/opencv_flann"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/sunj/Desktop/code/Ubuntu-2004/auto-calib/Camrea-LiDAR/Final_Version/LC_calibration_line_optimization/opencv_highgui"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/sunj/Desktop/code/Ubuntu-2004/auto-calib/Camrea-LiDAR/Final_Version/LC_calibration_line_optimization/opencv_imgcodecs"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/sunj/Desktop/code/Ubuntu-2004/auto-calib/Camrea-LiDAR/Final_Version/LC_calibration_line_optimization/opencv_imgproc"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/sunj/Desktop/code/Ubuntu-2004/auto-calib/Camrea-LiDAR/Final_Version/LC_calibration_line_optimization/opencv_ml"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/sunj/Desktop/code/Ubuntu-2004/auto-calib/Camrea-LiDAR/Final_Version/LC_calibration_line_optimization/opencv_objdetect"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/sunj/Desktop/code/Ubuntu-2004/auto-calib/Camrea-LiDAR/Final_Version/LC_calibration_line_optimization/opencv_photo"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/sunj/Desktop/code/Ubuntu-2004/auto-calib/Camrea-LiDAR/Final_Version/LC_calibration_line_optimization/opencv_stitching"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/sunj/Desktop/code/Ubuntu-2004/auto-calib/Camrea-LiDAR/Final_Version/LC_calibration_line_optimization/opencv_video"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/sunj/Desktop/code/Ubuntu-2004/auto-calib/Camrea-LiDAR/Final_Version/LC_calibration_line_optimization/opencv_videoio"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/sunj/Desktop/code/Ubuntu-2004/auto-calib/Camrea-LiDAR/Final_Version/LC_calibration_line_optimization/opencv_aruco"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/sunj/Desktop/code/Ubuntu-2004/auto-calib/Camrea-LiDAR/Final_Version/LC_calibration_line_optimization/opencv_bgsegm"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/sunj/Desktop/code/Ubuntu-2004/auto-calib/Camrea-LiDAR/Final_Version/LC_calibration_line_optimization/opencv_bioinspired"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/sunj/Desktop/code/Ubuntu-2004/auto-calib/Camrea-LiDAR/Final_Version/LC_calibration_line_optimization/opencv_ccalib"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/sunj/Desktop/code/Ubuntu-2004/auto-calib/Camrea-LiDAR/Final_Version/LC_calibration_line_optimization/opencv_datasets"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/sunj/Desktop/code/Ubuntu-2004/auto-calib/Camrea-LiDAR/Final_Version/LC_calibration_line_optimization/opencv_dnn_objdetect"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/sunj/Desktop/code/Ubuntu-2004/auto-calib/Camrea-LiDAR/Final_Version/LC_calibration_line_optimization/opencv_dnn_superres"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/sunj/Desktop/code/Ubuntu-2004/auto-calib/Camrea-LiDAR/Final_Version/LC_calibration_line_optimization/opencv_dpm"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/sunj/Desktop/code/Ubuntu-2004/auto-calib/Camrea-LiDAR/Final_Version/LC_calibration_line_optimization/opencv_face"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/sunj/Desktop/code/Ubuntu-2004/auto-calib/Camrea-LiDAR/Final_Version/LC_calibration_line_optimization/opencv_freetype"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/sunj/Desktop/code/Ubuntu-2004/auto-calib/Camrea-LiDAR/Final_Version/LC_calibration_line_optimization/opencv_fuzzy"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/sunj/Desktop/code/Ubuntu-2004/auto-calib/Camrea-LiDAR/Final_Version/LC_calibration_line_optimization/opencv_hdf"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/sunj/Desktop/code/Ubuntu-2004/auto-calib/Camrea-LiDAR/Final_Version/LC_calibration_line_optimization/opencv_hfs"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/sunj/Desktop/code/Ubuntu-2004/auto-calib/Camrea-LiDAR/Final_Version/LC_calibration_line_optimization/opencv_img_hash"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/sunj/Desktop/code/Ubuntu-2004/auto-calib/Camrea-LiDAR/Final_Version/LC_calibration_line_optimization/opencv_line_descriptor"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/sunj/Desktop/code/Ubuntu-2004/auto-calib/Camrea-LiDAR/Final_Version/LC_calibration_line_optimization/opencv_optflow"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/sunj/Desktop/code/Ubuntu-2004/auto-calib/Camrea-LiDAR/Final_Version/LC_calibration_line_optimization/opencv_phase_unwrapping"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/sunj/Desktop/code/Ubuntu-2004/auto-calib/Camrea-LiDAR/Final_Version/LC_calibration_line_optimization/opencv_plot"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/sunj/Desktop/code/Ubuntu-2004/auto-calib/Camrea-LiDAR/Final_Version/LC_calibration_line_optimization/opencv_quality"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/sunj/Desktop/code/Ubuntu-2004/auto-calib/Camrea-LiDAR/Final_Version/LC_calibration_line_optimization/opencv_reg"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/sunj/Desktop/code/Ubuntu-2004/auto-calib/Camrea-LiDAR/Final_Version/LC_calibration_line_optimization/opencv_rgbd"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/sunj/Desktop/code/Ubuntu-2004/auto-calib/Camrea-LiDAR/Final_Version/LC_calibration_line_optimization/opencv_saliency"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/sunj/Desktop/code/Ubuntu-2004/auto-calib/Camrea-LiDAR/Final_Version/LC_calibration_line_optimization/opencv_shape"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/sunj/Desktop/code/Ubuntu-2004/auto-calib/Camrea-LiDAR/Final_Version/LC_calibration_line_optimization/opencv_stereo"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/sunj/Desktop/code/Ubuntu-2004/auto-calib/Camrea-LiDAR/Final_Version/LC_calibration_line_optimization/opencv_structured_light"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/sunj/Desktop/code/Ubuntu-2004/auto-calib/Camrea-LiDAR/Final_Version/LC_calibration_line_optimization/opencv_superres"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/sunj/Desktop/code/Ubuntu-2004/auto-calib/Camrea-LiDAR/Final_Version/LC_calibration_line_optimization/opencv_surface_matching"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/sunj/Desktop/code/Ubuntu-2004/auto-calib/Camrea-LiDAR/Final_Version/LC_calibration_line_optimization/opencv_text"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/sunj/Desktop/code/Ubuntu-2004/auto-calib/Camrea-LiDAR/Final_Version/LC_calibration_line_optimization/opencv_tracking"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/sunj/Desktop/code/Ubuntu-2004/auto-calib/Camrea-LiDAR/Final_Version/LC_calibration_line_optimization/opencv_videostab"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/sunj/Desktop/code/Ubuntu-2004/auto-calib/Camrea-LiDAR/Final_Version/LC_calibration_line_optimization/opencv_viz"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/sunj/Desktop/code/Ubuntu-2004/auto-calib/Camrea-LiDAR/Final_Version/LC_calibration_line_optimization/opencv_ximgproc"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/sunj/Desktop/code/Ubuntu-2004/auto-calib/Camrea-LiDAR/Final_Version/LC_calibration_line_optimization/opencv_xobjdetect"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/sunj/Desktop/code/Ubuntu-2004/auto-calib/Camrea-LiDAR/Final_Version/LC_calibration_line_optimization/opencv_xphoto"
+				},
+				{
+					"backtrace" : 12,
+					"isSystem" : true,
+					"path" : "/usr/include/vtk-7.1"
+				},
+				{
+					"backtrace" : 12,
+					"isSystem" : true,
+					"path" : "/usr/include/freetype2"
+				},
+				{
+					"backtrace" : 11,
+					"isSystem" : true,
+					"path" : "/usr/local/include/pcl-1.13"
+				},
+				{
+					"backtrace" : 11,
+					"isSystem" : true,
+					"path" : "/usr/local/include/eigen3"
+				},
+				{
+					"backtrace" : 11,
+					"isSystem" : true,
+					"path" : "/usr/include/ni"
+				},
+				{
+					"backtrace" : 11,
+					"isSystem" : true,
+					"path" : "/usr/include/openni2"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "/usr/include/x86_64-linux-gnu/qt5"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "/usr/include/x86_64-linux-gnu/qt5/QtWidgets"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "/usr/include/x86_64-linux-gnu/qt5/QtGui"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "/usr/include/x86_64-linux-gnu/qt5/QtCore"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "/usr/include/opencv4"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		}
+	],
+	"id" : "calibration_viewer::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-fopenmp -O3 -DNDEBUG",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-rdynamic",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/usr/local/lib",
+				"role" : "libraryPath"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/usr/local/lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libpcl_surface.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libpcl_keypoints.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libpcl_tracking.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libpcl_recognition.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libpcl_stereo.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libpcl_outofcore.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libpcl_people.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libboost_iostreams.so.1.71.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.71.0",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lOpenNI",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libusb-1.0.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lOpenNI2",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libusb-1.0.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lfreetype",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lz",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ljpeg",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lpng",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltiff",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lexpat",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libflann_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libqhull_r.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/liblas_c.so.2.4.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.2.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libopencv_aruco.so.4.2.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libopencv_bgsegm.so.4.2.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libopencv_bioinspired.so.4.2.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libopencv_ccalib.so.4.2.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libopencv_dnn_objdetect.so.4.2.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libopencv_dnn_superres.so.4.2.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libopencv_dpm.so.4.2.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libopencv_face.so.4.2.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libopencv_freetype.so.4.2.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libopencv_fuzzy.so.4.2.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libopencv_hdf.so.4.2.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libopencv_hfs.so.4.2.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libopencv_img_hash.so.4.2.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libopencv_line_descriptor.so.4.2.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libopencv_quality.so.4.2.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libopencv_reg.so.4.2.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libopencv_rgbd.so.4.2.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libopencv_saliency.so.4.2.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libopencv_shape.so.4.2.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libopencv_stereo.so.4.2.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libopencv_structured_light.so.4.2.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libopencv_superres.so.4.2.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libopencv_surface_matching.so.4.2.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libopencv_tracking.so.4.2.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libopencv_videostab.so.4.2.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libopencv_viz.so.4.2.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.4.2.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.4.2.0",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libjsoncpp.so.1.7.4",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libpcl_registration.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libpcl_segmentation.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libpcl_features.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libpcl_filters.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libpcl_sample_consensus.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libpcl_ml.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libpcl_visualization.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libpcl_search.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libpcl_kdtree.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libpcl_io.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libpcl_octree.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lpcap",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lOpenNI",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libusb-1.0.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lOpenNI2",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libvtkChartsCore-7.1.so.7.1p.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libvtkInfovisCore-7.1.so.7.1p.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libvtkInteractionImage-7.1.so.7.1p.1",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ljpeg",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lpng",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lexpat",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libvtkViewsContext2D-7.1.so.7.1p.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libvtkViewsCore-7.1.so.7.1p.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libvtkInteractionWidgets-7.1.so.7.1p.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libvtkFiltersHybrid-7.1.so.7.1p.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libvtkImagingGeneral-7.1.so.7.1p.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libvtkImagingSources-7.1.so.7.1p.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libvtkRenderingVolume-7.1.so.7.1p.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libvtkIOXML-7.1.so.7.1p.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libvtkIOXMLParser-7.1.so.7.1p.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libvtkRenderingContextOpenGL2-7.1.so.7.1p.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libvtkGUISupportQt-7.1.so.7.1p.1",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libpcl_common.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.71.0",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-llz4",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/liblas.so.2.4.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libboost_iostreams.so.1.71.0",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltiff",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lgeotiff",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/local/lib/liblaszip.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.71.0",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libboost_atomic.so.1.71.0",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lpthread",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libopencv_highgui.so.4.2.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libopencv_datasets.so.4.2.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libopencv_plot.so.4.2.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libopencv_text.so.4.2.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libopencv_dnn.so.4.2.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libopencv_ml.so.4.2.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libopencv_phase_unwrapping.so.4.2.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libvtkRenderingContext2D-7.1.so.7.1p.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libvtkInteractionStyle-7.1.so.7.1p.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libvtkFiltersExtraction-7.1.so.7.1p.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libvtkFiltersStatistics-7.1.so.7.1p.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libvtkImagingFourier-7.1.so.7.1p.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libvtkalglib-7.1.so.7.1p.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libvtkImagingHybrid-7.1.so.7.1p.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libvtkRenderingAnnotation-7.1.so.7.1p.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libvtkImagingColor-7.1.so.7.1p.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libvtkIOGeometry-7.1.so.7.1p.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libvtkIOLegacy-7.1.so.7.1p.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libvtkIOPLY-7.1.so.7.1p.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libvtkRenderingLOD-7.1.so.7.1p.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libvtkFiltersModeling-7.1.so.7.1p.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libvtkIOCore-7.1.so.7.1p.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libvtkRenderingOpenGL2-7.1.so.7.1p.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libvtkImagingCore-7.1.so.7.1p.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libvtkIOImage-7.1.so.7.1p.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libvtkDICOMParser-7.1.so.7.1p.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libvtkmetaio-7.1.so.7.1p.1",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lz",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lGLEW",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lSM",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lICE",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lX11",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lXext",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lXt",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libvtkRenderingFreeType-7.1.so.7.1p.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libvtkRenderingCore-7.1.so.7.1p.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libvtkCommonColor-7.1.so.7.1p.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libvtkFiltersGeometry-7.1.so.7.1p.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libvtkFiltersSources-7.1.so.7.1p.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libvtkFiltersGeneral-7.1.so.7.1p.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libvtkCommonComputationalGeometry-7.1.so.7.1p.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libvtkFiltersCore-7.1.so.7.1p.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libvtkCommonExecutionModel-7.1.so.7.1p.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libvtkCommonDataModel-7.1.so.7.1p.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libvtkCommonTransforms-7.1.so.7.1p.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libvtkCommonMisc-7.1.so.7.1p.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libvtkCommonMath-7.1.so.7.1p.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libvtkCommonSystem-7.1.so.7.1p.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libvtkCommonCore-7.1.so.7.1p.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libvtksys-7.1.so.7.1p.1",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ldl",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lfreetype",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libopencv_optflow.so.4.2.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libopencv_ximgproc.so.4.2.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libopencv_video.so.4.2.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libopencv_videoio.so.4.2.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.4.2.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.4.2.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.4.2.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libopencv_features2d.so.4.2.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libopencv_flann.so.4.2.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.2.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.2.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libopencv_core.so.4.2.0",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "calibration_viewer",
+	"nameOnDisk" : "calibration_viewer",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "viewer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/dataloader.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}
