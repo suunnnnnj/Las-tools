@@ -4,6 +4,8 @@
 #include "utils.hpp"
 #include "tqdm.h"
 
+#include <pcl/filters/uniform_sampling.h>
+
 class LAS_TOOL
 {
     public:
@@ -70,8 +72,6 @@ class LAS_TOOL
         double shift_x_, shift_y_, shift_z_;
 
         bool IsKITTIDataset = true;
-
-        
 };
 
 #endif

@@ -87,11 +87,68 @@ void LAS_TOOL::Gridization()
             writer.WritePoint(point);
     }
 
+    std::cout <<  "-------------------------" << std::endl;
+
     return;
 }
 
 void LAS_TOOL::Subsampling()
 {
+    double radius;
+    
+    std::cout << "Enter the radius(cm) : ";
+    std::cin >> radius;
+    
+    tqdm bar;
+
+    for(int lIdx = 0 ; lIdx < laslist_.size(); lIdx++)
+    {
+        bar.progress(lIdx, laslist_.size());
+
+        pcl::PointCloud<pcl::PointXYZRGBI>::Ptr cloud(new pcl::PointCloud<pcl::PointXYZRGBI>);
+        pcl::PointCloud<pcl::PointXYZRGBI>::Ptr subcloud(new pcl::PointCloud<pcl::PointXYZRGBI>);
+
+        std::ifstream ifs;
+        ifs.open(laslist_[lIdx], std::ios::in | std::ios::binary);
+
+        if(!ifs.is_open())
+        {
+            std::cout << "Error opening input : " << laslist_[lIdx] << std::endl;
+            exit(-1);
+        }
+
+        liblas::ReaderFactory f ;
+        liblas::Reader reader = f.CreateWithStream(ifs);
+
+        while (reader.ReadNextPoint())
+        {
+            liblas::Point const &p = reader.GetPoint();
+            
+            pcl::PointXYZRGBI pt;
+            
+            pt.x = p.GetX();
+            pt.y = p.GetY();
+            pt.z = p.GetZ();
+
+            pt.r = p.GetColor().GetRed();
+            pt.g = p.GetColor().GetGreen();
+            pt.b = p.GetColor().GetBlue();
+            
+            pt.intensity = p.GetIntensity();
+
+            cloud->points.push_back(pt);
+        }
+
+        pcl::UniformSampling<pcl::PointXYZRGBI> filter;
+        filter.setInputCloud(cloud); 
+        filter.setRadiusSearch(radius/100.0);
+        filter.filter(*subcloud); 
+
+        std::string lasPath;
+        lasPath = outputDir_ + "/" + FileInformation(laslist_[lIdx], "filename");
+        pcl2las(lasPath, subcloud, shift_x_, shift_y_, shift_z_);
+    }
+
     return;
 }
 

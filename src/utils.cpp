@@ -77,3 +77,35 @@ void las2pcl(const std::string &lasPath, pcl::PointCloud<pcl::PointXYZRGBI>::Ptr
 {
     return;
 }
+
+std::string FileInformation(const std::string &filePath, const std::string &information)
+{
+    boost::filesystem::path p{filePath};
+
+    std::string info;
+
+    switch(Hashcode(information.c_str()))
+    {
+        case Hashcode("filename"):
+            info = p.filename().string();
+            break;
+        
+        case Hashcode("filename_stem"):
+            info = p.filename().stem().string();
+            break;
+            
+        case Hashcode("parent_path"):
+            info = p.parent_path().string();
+            break;
+        
+        case Hashcode("extension"):
+            info = p.extension().string();
+            break;
+
+        case Hashcode("root_path"):
+            info = p.root_path().string();
+            break;
+    }
+
+    return info;
+}
