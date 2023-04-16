@@ -75,6 +75,37 @@ void pcl2las(const std::string &lasPath, pcl::PointCloud<pcl::PointXYZRGBI>::Ptr
 
 void las2pcl(const std::string &lasPath, pcl::PointCloud<pcl::PointXYZRGBI>::Ptr &cloud, double &shift_x, double &shift_y, double &shift_z, bool isOrigin)
 {
+    std::ifstream ifs;
+    ifs.open(lasPath, std::ios::in | std::ios::binary);
+
+    if (!ifs.is_open())
+    {
+        std::cout << "Error opening input : " << lasPath << std::endl;
+        exit(-1);
+    }
+
+    liblas::ReaderFactory f;
+    liblas::Reader reader = f.CreateWithStream(ifs);
+
+    while (reader.ReadNextPoint())
+    {
+        liblas::Point const &p = reader.GetPoint();
+
+        pcl::PointXYZRGBI pt;
+
+        pt.x = p.GetX();
+        pt.y = p.GetY();
+        pt.z = p.GetZ();
+
+        pt.r = p.GetColor().GetRed();
+        pt.g = p.GetColor().GetGreen();
+        pt.b = p.GetColor().GetBlue();
+
+        pt.intensity = p.GetIntensity();
+
+        cloud->points.push_back(pt);
+    }
+
     return;
 }
 
@@ -93,7 +124,7 @@ std::string FileInformation(const std::string &filePath, const std::string &info
         case Hashcode("filename_stem"):
             info = p.filename().stem().string();
             break;
-            
+
         case Hashcode("parent_path"):
             info = p.parent_path().string();
             break;

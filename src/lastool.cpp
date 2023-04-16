@@ -108,36 +108,7 @@ void LAS_TOOL::Subsampling()
         pcl::PointCloud<pcl::PointXYZRGBI>::Ptr cloud(new pcl::PointCloud<pcl::PointXYZRGBI>);
         pcl::PointCloud<pcl::PointXYZRGBI>::Ptr subcloud(new pcl::PointCloud<pcl::PointXYZRGBI>);
 
-        std::ifstream ifs;
-        ifs.open(laslist_[lIdx], std::ios::in | std::ios::binary);
-
-        if(!ifs.is_open())
-        {
-            std::cout << "Error opening input : " << laslist_[lIdx] << std::endl;
-            exit(-1);
-        }
-
-        liblas::ReaderFactory f ;
-        liblas::Reader reader = f.CreateWithStream(ifs);
-
-        while (reader.ReadNextPoint())
-        {
-            liblas::Point const &p = reader.GetPoint();
-            
-            pcl::PointXYZRGBI pt;
-            
-            pt.x = p.GetX();
-            pt.y = p.GetY();
-            pt.z = p.GetZ();
-
-            pt.r = p.GetColor().GetRed();
-            pt.g = p.GetColor().GetGreen();
-            pt.b = p.GetColor().GetBlue();
-            
-            pt.intensity = p.GetIntensity();
-
-            cloud->points.push_back(pt);
-        }
+        las2pcl(laslist_[lIdx], cloud, shift_x_, shift_y_, shift_z_, true);
 
         pcl::UniformSampling<pcl::PointXYZRGBI> filter;
         filter.setInputCloud(cloud); 
