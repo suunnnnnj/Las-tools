@@ -13,9 +13,28 @@ class LAS_TOOL
             laslist_ = listdir(inputDir, ".las");
 
             outputDir_ = outputDir;
-            
-            if(boost::filesystem::exists(outputDir_))
+
+            if (boost::filesystem::exists(outputDir_))
                 boost::filesystem::create_directories(outputDir_);
+
+            std::string las0 = laslist_[0];
+            std::ifstream ifs(las0, std::ios::in | std::ios::binary);
+            
+            if (!ifs.is_open())
+            {
+                std::cout << "Error opening input : " << las0 << std::endl;
+                exit(-1);
+            }
+
+            liblas::ReaderFactory f;
+            liblas::Reader reader = f.CreateWithStream(ifs);
+            reader.ReadNextPoint();
+
+            liblas::Point point = reader.GetPoint();
+            
+            shift_x_ = point.GetX();
+            shift_y_ = point.GetY();
+            shift_z_ = point.GetZ();
 
             switch( Hashcode(function.c_str()) )
             {
@@ -47,6 +66,10 @@ class LAS_TOOL
         void Gridization();
         void Subsampling();
         void Denoising();
+
+        double shift_x_, shift_y_, shift_z_;
+
+        bool IsKITTIDataset = true;
 
         
 };

@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.2)
 set(CMAKE_BUILD_TYPE Release)
-add_compile_options(-std=c++14)
+add_compile_options(-std=c++17)
 
 project(las-tools)
 
