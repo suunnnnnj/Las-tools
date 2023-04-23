@@ -51,7 +51,7 @@ std::vector<std::string> listdir(const std::string &directoryPath, const std::st
 std::vector<std::string> tokenize(std::string context, const std::string &delim = " ");
 
 void pcl2las(const std::string &lasPath, pcl::PointCloud<pcl::PointXYZRGBI>::Ptr cloud, const double &shift_x, const double &shift_y, const double &shift_z);
-void las2pcl(const std::string &lasPath, pcl::PointCloud<pcl::PointXYZRGBI>::Ptr &cloud, double &shift_x, double &shift_y, double &shift_z, bool isOrigin = false);
+void las2pcl(const std::string &lasPath, pcl::PointCloud<pcl::PointXYZRGBI>::Ptr &cloud, double &shift_x, double &shift_y, double &shift_z, bool &isOrigin);
 
 std::string FileInformation(const std::string &filePath, const std::string &information);
 

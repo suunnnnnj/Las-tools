@@ -73,7 +73,7 @@ void pcl2las(const std::string &lasPath, pcl::PointCloud<pcl::PointXYZRGBI>::Ptr
     }
 }
 
-void las2pcl(const std::string &lasPath, pcl::PointCloud<pcl::PointXYZRGBI>::Ptr &cloud, double &shift_x, double &shift_y, double &shift_z, bool isOrigin)
+void las2pcl(const std::string &lasPath, pcl::PointCloud<pcl::PointXYZRGBI>::Ptr &cloud, double &shift_x, double &shift_y, double &shift_z, bool &isOrigin)
 {
     std::ifstream ifs;
     ifs.open(lasPath, std::ios::in | std::ios::binary);
@@ -91,11 +91,19 @@ void las2pcl(const std::string &lasPath, pcl::PointCloud<pcl::PointXYZRGBI>::Ptr
     {
         liblas::Point const &p = reader.GetPoint();
 
+        if(!isOrigin)
+        {
+            shift_x = p.GetX();
+            shift_y = p.GetY();
+            shift_z = p.GetZ();
+            isOrigin = true;
+        }
+
         pcl::PointXYZRGBI pt;
 
-        pt.x = p.GetX();
-        pt.y = p.GetY();
-        pt.z = p.GetZ();
+        pt.x = p.GetX() - shift_x;
+        pt.y = p.GetY() - shift_y;
+        pt.z = p.GetZ() - shift_z;
 
         pt.r = p.GetColor().GetRed();
         pt.g = p.GetColor().GetGreen();

@@ -116,7 +116,8 @@ void LAS_TOOL::Subsampling()
     std::cin >> radius;
     
     tqdm bar;
-
+    bool isOrigin = false; 
+    
     for(int lIdx = 0 ; lIdx < laslist_.size(); lIdx++)
     {
         bar.progress(lIdx, laslist_.size());
@@ -124,7 +125,7 @@ void LAS_TOOL::Subsampling()
         pcl::PointCloud<pcl::PointXYZRGBI>::Ptr cloud(new pcl::PointCloud<pcl::PointXYZRGBI>);
         pcl::PointCloud<pcl::PointXYZRGBI>::Ptr subcloud(new pcl::PointCloud<pcl::PointXYZRGBI>);
 
-        las2pcl(laslist_[lIdx], cloud, shift_x_, shift_y_, shift_z_, true);
+        las2pcl(laslist_[lIdx], cloud, shift_x_, shift_y_, shift_z_, isOrigin);
 
         pcl::UniformSampling<pcl::PointXYZRGBI> filter;
         filter.setInputCloud(cloud); 
