@@ -11,6 +11,8 @@ void LAS_TOOL::Gridization()
     
     std::unordered_map<std::string, std::vector<liblas::Point>> pointcloudGroup;
 
+    bool setShift = false;
+
     std::cout << "-------------------------" << std::endl;
     std::cout << "las Gridizaion..." << std::endl;
 
@@ -32,6 +34,18 @@ void LAS_TOOL::Gridization()
 
         while (reader.ReadNextPoint())
         {
+
+            if(!setShift)
+            {
+                liblas::Point const &p = reader.GetPoint();
+
+                shift_x_ = p.GetX();
+                shift_y_ = p.GetY();
+                shift_z_ = p.GetZ(); 
+                
+                setShift = true;
+            }
+
             if (IsKITTIDataset)
             {
                 liblas::Point const &p = reader.GetPoint();
@@ -69,7 +83,7 @@ void LAS_TOOL::Gridization()
     
     liblas::Header header;
     header.SetDataFormatId(liblas::ePointFormat3);
-    header.SetOffset(shift_x_, shift_y_, shift_z_);
+    // header.SetOffset(shift_x_, shift_y_, shift_z_);
     header.SetScale(0.01, 0.01, 0.01);
     
     int lasIdx = 0;
@@ -85,6 +99,8 @@ void LAS_TOOL::Gridization()
 
         for(liblas::Point & point : pointcloud)
             writer.WritePoint(point);
+        
+        lasIdx++;
     }
 
     std::cout <<  "-------------------------" << std::endl;

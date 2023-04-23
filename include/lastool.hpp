@@ -4,6 +4,9 @@
 #include "utils.hpp"
 #include "tqdm.h"
 
+#include <iostream>
+#include <pcl/io/pcd_io.h>
+#include <pcl/point_types.h>
 #include <pcl/filters/uniform_sampling.h>
 
 class LAS_TOOL
@@ -71,7 +74,7 @@ class LAS_TOOL
 
         double shift_x_, shift_y_, shift_z_;
 
-        bool IsKITTIDataset = true;
+        bool IsKITTIDataset = false;
 };
 
 #endif
